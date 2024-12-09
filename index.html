@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логистика Компаниясы | Logi</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Cargo.kz</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1;" class="active">Басты бет</a>
+            <a href="#services" style="--i:2;">Қызметтер</a>
+            <a href="#reviews" style="--i:3;">Пікірлер</a>
+            <a href="#directions" style="--i:4;"> Бағыттар</a>
+            <a href="#contact" style="--i:5;">Байланыс</a>
+        </nav>
+
+        <div class="social-media">
+            <a href="#" style="--i:1;"><i class='bx bxl-twitter'></i></a>
+            <a href="#" style="--i:2;"><i class='bx bxl-facebook'></i></a>
+            <a href="#" style="--i:3;"><i class='bx bxl-instagram'></i></a>
+        </div>
+    </header>
+
+    <section id="home" class="home">
+        <div class="home-content">
+            <h1>Логистикадағы жаңа деңгей</h1>
+            <h3>Бізбен бірге жеңіл әрі сенімді!</h3>
+            <p>Біз сіздің жүгіңізді әлемнің кез келген нүктесіне қауіпсіз жеткіземіз. Технологиялар мен сенімділік — біздің басты артықшылығымыз.</p>
+            <section id="video-section" class="video-section">
+                <h2>Біз туралы Видео</h2>
+                <div class="video-container">
+                    <iframe 
+                        width="700" 
+                        height="315" 
+                        src="https://www.youtube.com/embed/drAD0zwA4lk" 
+                        title="YouTube видео" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </section>
+            
+        
+        
+        <div class="rhombus2"></div>
+    </section>
+
+
+
+    <section class="services" id="services">
+        <h1 class="heading"> Қызметтер </h1>
+        <div class="services-container">
+            <!-- Автомобильдік тасымалдау -->
+            <div class="service">
+                <i class='bx bxs-truck'></i>
+                <h3>Автомобильдік тасымалдау</h3>
+                <p>Жүктерді тасымалдаудың ең сенімді және тиімді тәсілі. Біздің қызметтеріміз арқылы жүгіңізді қауіпсіз жеткіземіз.</p>
+                
+            </div>
+            <!-- Авиаперевозки -->
+            <div class="service">
+                <i class='bx bxs-plane-alt'></i>
+                <h3>Авиаперевозки</h3>
+                <p>Ең жылдам тасымалдау әдісі! Біздің авиациялық қызметтеріміз арқылы жүктеріңізді шапшаң жеткізе аласыз.</p>
+               
+            </div>
+            <!-- ЖД перевозки -->
+            <div class="service">
+                <i class='bx bxs-train'></i>
+                <h3>ЖД тасымалдау</h3>
+                <p>Жүктерді алыс қашықтықтарға тасымалдау үшін тамаша таңдау. Қызметіміз сенімді және қолжетімді.</p>
+               
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section class="services" id="services">
+        <div class="calculator">
+            <h2>Тасымал бағасын есептеу</h2>
+            <form id="calculator-form">
+                <div class="column-left">
+                    <div class="form-group">
+                        <label for="direction">Бағыттар:</label>
+                        <select id="direction" required>
+                            <option value="">Бағыттарды таңдау</option>
+                            <option value="kz-ru">Казахстан - Россия</option>
+                            <option value="kz-cn">Казахстан - Китай</option>
+                            <option value="kz-tr">Казахстан - Турция</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="from-city">Қайдан:</label>
+                        <select id="from-city" required>
+                            <option value="">Жіберетін қаланы таңдаңыз</option>
+                            <option value="kz-ru">Атырау</option>
+                            <option value="kz-cn">Алматы</option>
+                            <option value="kz-tr">Астана</option><option value="kz-ru">Атырау</option>
+                            <option value="kz-cn">Ақтау</option>
+                            <option value="kz-tr">Павлодар</option>
+                            <option value="kz-ru">Қостанай</option>
+                            <option value="kz-cn">Қарағанды</option>
+                            <option value="kz-tr">Шымкент</option>
+                            <option value="kz-ru">Тараз</option>
+                            <option value="kz-cn">Семей</option>
+                            <option value="kz-tr">Өскемен</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to-city">Қайда:</label>
+                        <select id="to-city" required>
+                            <option value="">Қабылдайтын қаланы таңдаңыз</option>
+                            <option value="">Жіберетін қаланы таңдаңыз</option>
+                            <option value="kz-ru">Атырау</option>
+                            <option value="kz-cn">Алматы</option>
+                            <option value="kz-tr">Астана</option><option value="kz-ru">Атырау</option>
+                            <option value="kz-cn">Ақтау</option>
+                            <option value="kz-tr">Павлодар</option>
+                            <option value="kz-ru">Қостанай</option>
+                            <option value="kz-cn">Қарағанды</option>
+                            <option value="kz-tr">Шымкент</option>
+                            <option value="kz-ru">Тараз</option>
+                            <option value="kz-cn">Семей</option>
+                            <option value="kz-tr">Өскемен</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="transport-type">Тасымалдау түрі:</label>
+                        <select id="transport-type" required>
+                            <option value="">Түрін таңдаңыз</option>
+                            <option value="auto">Автомобильдік тасымалдау</option>
+                            <option value="air">Авиа тасымалдау</option>
+                            <option value="rail">ЖД тасымалдау</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="column-right">
+                    <div class="form-group">
+                        <label for="length">Посылка ұзындығы (см):</label>
+                        <input type="number" id="length" required placeholder="Ұзындығын енгізіңіз">
+                    </div>
+                    <div class="form-group">
+                        <label for="width">Посылка ені (см):</label>
+                        <input type="number" id="width" required placeholder="Енін енгізіңіз">
+                    </div>
+                    <div class="form-group">
+                        <label for="height">Посылка биіктігі (см):</label>
+                        <input type="number" id="height" required placeholder="Биіктігін енгізіңіз">
+                    </div>
+                    <div class="form-group">
+                        <label for="weight">Посылка салмағы (кг):</label>
+                        <input type="number" id="weight" required placeholder="Салмағын енгізіңіз">
+                    </div>
+                </div>
+                <button type="submit">Бағасын есептеу</button>
+            </form>
+            <div class="result" id="result"></div>
+        </div>
+        
+    </section>
+    <script>
+        document.getElementById('calculator-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+    
+            // Get form values
+            const direction = document.getElementById('direction').value;
+            const fromCity = document.getElementById('from-city').value;
+            const toCity = document.getElementById('to-city').value;
+            const transportType = document.getElementById('transport-type').value;
+            const length = parseFloat(document.getElementById('length').value);
+            const width = parseFloat(document.getElementById('width').value);
+            const height = parseFloat(document.getElementById('height').value);
+            const weight = parseFloat(document.getElementById('weight').value);
+    
+            // Validate inputs
+            if (!direction || !fromCity || !toCity || !transportType || isNaN(length) || isNaN(width) || isNaN(height) || isNaN(weight)) {
+                alert('Барлық өрістерді дұрыс толтырыңыз!');
+                return;
+            }
+    
+            // Example of a simple price calculation based on direction, transport type, and weight/volume
+            let price = 0;
+    
+            // Adjust price based on the direction and transport type
+            if (direction === 'kz-ru') {
+                price += 1000; // Base price for Kazakhstan - Russia
+            } else if (direction === 'kz-cn') {
+                price += 1500; // Base price for Kazakhstan - China
+            } else if (direction === 'kz-tr') {
+                price += 2000; // Base price for Kazakhstan - Turkey
+            }
+    
+            // Adjust price based on transport type
+            if (transportType === 'auto') {
+                price += 500; // Additional price for auto transport
+            } else if (transportType === 'air') {
+                price += 1500; // Additional price for air transport
+            } else if (transportType === 'rail') {
+                price += 1000; // Additional price for rail transport
+            }
+    
+            // Calculate the volume of the package
+            const volume = length * width * height / 1000000; // Volume in cubic meters
+    
+            // Calculate price based on weight and volume
+            const weightVolumeFactor = weight * volume;
+    
+            // Final price adjustment
+            price += weightVolumeFactor * 10; // Factor in the weight and volume for final price
+    
+            // Display result
+            document.getElementById('result').innerHTML = `Тасымал бағасы: ${price.toFixed(2)} KZT`;
+        });
+    </script>
+    
+<script>
+    document.getElementById('direction').addEventListener('change', function() {
+        const direction = this.value;
+        const fromCitySelect = document.getElementById('from-city');
+        const toCitySelect = document.getElementById('to-city');
+        
+        // Очищаем текущие города
+        fromCitySelect.innerHTML = '<option value="">Выберите город отправления</option>';
+        toCitySelect.innerHTML = '<option value="">Выберите город назначения</option>';
+
+        let fromCities = [];
+        let toCities = [];
+
+        // Заполняем города в зависимости от направления
+        if (direction === 'kz-ru') {
+            fromCities = ['Алматы', 'Нур-Султан', 'Шымкент', 'Атырау'];
+            toCities = ['Москва', 'Санкт-Петербург', 'Екатеринбург', 'Новосибирск'];
+        } else if (direction === 'kz-cn') {
+            fromCities = ['Алматы', 'Нур-Султан', 'Шымкент', 'Атырау'];
+            toCities = ['Пекин', 'Шанхай', 'Гуанчжоу', 'Урумчи'];
+        } else if (direction === 'kz-tr') {
+            fromCities = ['Алматы', 'Нур-Султан', 'Шымкент', 'Атырау'];
+            toCities = ['Стамбул', 'Анкара', 'Измир', 'Анталия'];
+        }
+
+        // Добавляем города отправления
+        fromCities.forEach(function(city) {
+            const option = document.createElement('option');
+            option.value = city;
+            option.textContent = city;
+            fromCitySelect.appendChild(option);
+        });
+
+        // Добавляем города назначения
+        toCities.forEach(function(city) {
+            const option = document.createElement('option');
+            option.value = city;
+            option.textContent = city;
+            toCitySelect.appendChild(option);
+        });
+    });
+
+    document.getElementById('calculator-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        // Получаем значения из формы
+        const transportType = document.getElementById('transport-type').value;
+        const fromCity = document.getElementById('from-city').value;
+        const toCity = document.getElementById('to-city').value;
+        const length = parseFloat(document.getElementById('length').value);
+        const width = parseFloat(document.getElementById('width').value);
+        const height = parseFloat(document.getElementById('height').value);
+        const weight = parseFloat(document.getElementById('weight').value);
+
+        const resultDiv = document.getElementById('result');
+
+        if (!transportType || !fromCity || !toCity || !length || !width || !height || !weight) {
+            resultDiv.textContent = 'Пожалуйста, заполните все поля.';
+            resultDiv.style.color = 'red';
+            return;
+        }
+
+        // Рассчитываем стоимость в зависимости от типа перевозки и веса
+        let pricePerKm = 0;
+        let distance = 0;
+
+        // Примерные расстояния между городами
+        const cityDistances = {
+            'Алматы': { 'Москва': 3000, 'Санкт-Петербург': 3500, 'Екатеринбург': 2500, 'Новосибирск': 4000 },
+            'Нур-Султан': { 'Москва': 2500, 'Санкт-Петербург': 3000, 'Екатеринбург': 2000, 'Новосибирск': 3500 },
+            'Шымкент': { 'Москва': 2500, 'Санкт-Петербург': 3000, 'Екатеринбург': 2000, 'Новосибирск': 3500 },
+            'Атырау': { 'Москва': 2500, 'Санкт-Петербург': 3000, 'Екатеринбург': 2000, 'Новосибирск': 3500 },
+            'Пекин': { 'Алматы': 3000, 'Шанхай': 3500, 'Гуанчжоу': 4000, 'Урумчи': 3000 },
+            'Шанхай': { 'Алматы': 3000, 'Пекин': 3500, 'Гуанчжоу': 4000, 'Урумчи': 3000 },
+            'Гуанчжоу': { 'Алматы': 3000, 'Шанхай': 3500, 'Пекин': 4000, 'Урумчи': 3000 },
+            'Урумчи': { 'Алматы': 3000, 'Шанхай': 3500, 'Гуанчжоу': 4000, 'Пекин': 3000 },
+            'Стамбул': { 'Алматы': 3000, 'Анкара': 3500, 'Измир': 4000, 'Анталия': 3000 },
+            'Анкара': { 'Алматы': 3000, 'Стамбул': 3500, 'Измир': 4000, 'Анталия': 3000 },
+            'Измир': { 'Алматы': 3000, 'Стамбул': 3500, 'Анкара': 4000, 'Анталия': 3000 },
+            'Анталия': { 'Алматы': 3000, 'Стамбул': 3500, 'Анкара': 4000, 'Измир': 3000 }
+        };
+
+        if (cityDistances[fromCity] && cityDistances[fromCity][toCity]) {
+            distance = cityDistances[fromCity][toCity];
+        } else {
+            resultDiv.textContent = 'Расстояние между выбранными городами не найдено.';
+            resultDiv.style.color = 'red';
+            return;
+        }
+
+        // Стоимость за километр
+        switch (transportType) {
+            case 'auto':
+                pricePerKm = 5; // 5 тенге за км для автомобильных перевозок
+                break;
+            case 'air':
+                pricePerKm = 15; // 15 тенге за км для авиаперевозок
+                break;
+            case 'rail':
+                pricePerKm = 10; // 10 тенге за км для железнодорожных перевозок
+                break;
+            default:
+                resultDiv.textContent = 'Не выбран тип перевозки.';
+                resultDiv.style.color = 'red';
+                return;
+        }
+
+        // Рассчитываем стоимость
+        const volume = length * width * height / 1000000; // В кубических метрах
+        const cost = (distance * pricePerKm + weight * 10 + volume * 1000).toFixed(2);
+
+        resultDiv.textContent = Стоимость доставки: ${cost} тенге;
+        resultDiv.style.color = 'green';
+    });
+</script>
+    
+
+
+
+
+
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Пікірлер</h2>
+            <p>Біздің қызметтеріміз туралы клиенттердің пікірлері:</p>
+    
+            <div class="reviews-cards">
+                <div class="review-card">
+                    <h3>Айша Қ.</h3>
+                    <p>“Cargo.kz компаниясының қызметі өте жоғары деңгейде. Тауарды уақытында және қауіпсіз жеткізді. Рақмет!”</p>
+                </div>
+                <div class="review-card">
+                    <h3>Мұрат Т.</h3>
+                    <p>“Олардың жеткізу қызметі өте сенімді. Барлық тапсырыстарым ешқашан кешігіп келген емес.”</p>
+                </div>
+                <div class="review-card">
+                    <h3>Санжар Қ.</h3>
+                    <p>“Cargo.kz компаниясының қызмет көрсету сапасы өте жоғары. Қызметкерлер өте мейірімді және кәсіби.”</p>
+                </div>
+            </div>
+    
+            <!-- Кнопка для отправки отзыва в WhatsApp -->
+            <a href="https://wa.me/7054935868?text=Менің%20пікірім%20—" target="_blank" class="btn-whatsapp">
+                Жазу WhatsApp арқылы
+            </a>
+        </div>
+    </section>
+    
+
+
+
+    <section id="directions" class="directions">
+        <div class="container">
+            <h2>Біздің Бағыттарымыз</h2>
+            <p>Біз Қазақстан мен басқа елдер арасындағы логистикалық бағыттар бойынша қызмет көрсетеміз.</p>
+    
+            <!-- Секция с тремя направлениями -->
+            <div class="directions-cards">
+                <div class="direction-card">
+                    <img src="C:\Users\Dametken\Desktop\russia.jpg" alt="Қазақстан - Ресей" class="flag-img">
+                    <h3>Қазақстан - Ресей</h3>
+                    <p>Қазақстан мен Ресей арасында жүк тасымалдау қызметтерін ұсынамыз. Қауіпсіз және жедел жеткізу.</p>
+                </div>
+                <div class="direction-card">
+                    <img src="C:\Users\Dametken\Desktop\веб\images\china.jpg" alt="Қазақстан - Қытай" class="flag-img">
+                    <h3>Қазақстан - Қытай</h3>
+                    <p>Қытайға жүк жеткізу үшін сенімді және тиімді логистика қызметтерін ұсынамыз.</p>
+                </div>
+                <div class="direction-card">
+                    <img src="C:\\Users\\Dametken\\Desktop\\turkey.jpg" alt="Қазақстан - Түркия" class="flag-img">
+                    <h3>Қазақстан - Түркия</h3>
+                    <p>Түркияға әуе арқылы жедел жеткізу қызметтерін ұсынамыз.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Бізбен Байланысу</h2>
+            <p>Сізде сұрақтар немесе ұсыныстар болса, бізге хабарласыңыз! Біз сізге көмектесуге әрқашан дайынбыз.</p>
+    
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class='bx bx-phone'></i>
+                    <h3>Телефон</h3>
+                    <p><a href="tel:+77054935868">+7 (705) 493-58-68</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bx-envelope'></i>
+                    <h3>Электрондық Пошта</h3>
+                    <p><a href="mailto:d.orazbayeva@aues.kz">d.orazbayeva@aues.kz</a></p>
+                </div>
+                <div class="contact-item">
+                    <i class='bx bxl-whatsapp'></i>
+                    <h3>WhatsApp</h3>
+                    <p><a href="https://wa.me/77054935868">Хабарласу арқылы</a></p>
+                </div>
+            </div>
+    
+            <form id="contactForm">
+    <input type="text" id="name" name="name" placeholder="Аты-жөніңіз" required>
+    <input type="email" id="email" name="email" placeholder="Электрондық пошта" required>
+    <textarea id="message" name="message" placeholder="Хабарламаңызды жазыңыз" required></textarea>
+    <button type="submit" class="btn">Жіберу</button>
+</form>
+
+<script>
+    // Форманың жіберілуін тоқтату үшін
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();  // Форманың жіберілуін тоқтату
+
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+
+        if (!name || !email || !message) {
+            alert('Барлық өрістерді толтырыңыз!');
+            return;
+        }
+
+        alert(`Хабарлама жіберілді! \nАты-жөні: ${name} \nЭлектрондық пошта: ${email} \nХабарлама: ${message}`);
+    });
+</script>
+
+    
+
+
+
+    <section id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Компания туралы</h3>
+                    <p>Cargo.kz — бұл халықаралық логистика қызметтері мен тасымалдау шешімдерін ұсынатын компания. Біз әр клиентке ең жақсы сапа мен қызмет көрсетуге ұмтыламыз.</p>
+                </div>
+                <div class="footer-contact">
+                    <h3>Байланыс Ақпараттары</h3>
+                    <ul>
+                        <li><i class='bx bx-map'></i> Алматы, Қазақстан</li>
+                        <li><i class='bx bx-phone'></i> <a href="tel:+77054935868">+7 (705)493-58-68</a></li>
+                        <li><i class='bx bx-envelope'></i> <a href="mailto:d.orazbayeva@aues.kz">d.orazbayeva@aues.kz</a></li>
+                        <li><i class='bx bxl-whatsapp'></i> <a href="https://wa.me/77054935868">WhatsApp</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cargo.kz Барлық құқықтар қорғалған.</p>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-link"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="footer-social-link"><i class='bx bxl-twitter'></i></a>
+                    <a href="#" class="footer-social-link"><i class='bx bxl-instagram'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+
+
+
+
+ 
